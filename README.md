@@ -53,6 +53,8 @@ NOTE: One can use "Last-Modified" or "Etag" HTTP header in response to prevent
 wasted upstream refresh actions, Especially when thousands serverlists and
 upstreams configured.
 
+NOTE: Will also segfault at runtime if you leave out the syntax for serverlist upstream in the config.
+
 ## Directives
 ### serverlist_service
 * Syntax: `serverlist_service url=http://xxx/ [conf_dump_dir=dumped_dir/] [interval=5s] [timeout=2s] [concurrency=1];`
